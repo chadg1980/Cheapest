@@ -1,0 +1,178 @@
+body{
+    background-color: black !Important;
+    position: relative;
+    padding: 0 !Important;
+    margin: 0 !Important;
+}
+
+
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 135px;
+    z-index: 10;
+    background-color: black;
+    border-bottom: 2px solid white;
+
+}
+.money {
+    color: white;
+    border: 1px solid white;
+    padding: 2px;
+
+}
+h1 {
+    color: white !Important;
+    text-shadow: 1px 1px gray;
+    font: serif;
+}
+hr{
+    width: 160px;
+    margin-left: -15px;
+    padding-bottom: -10px;
+    
+}
+#savingTotal p{
+    color: white;
+    padding-left: 175px;
+    padding-right: 50px;
+}
+
+#category{
+    position: fixed;
+    background-color: black;
+    color: white;
+    float: left;
+    width: 150px;
+    height: 100vh;
+    padding-top: 150px;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 10px;
+    border-right: 2px solid white;
+
+}
+
+
+#category .btn{
+    color: white !Important;
+    background-color: black !Important;
+    border: none;
+    width: 100%;
+    text-align: left;
+
+
+}
+#category .btn:hover{
+    background-color: gray !Important;
+}
+
+#categoryHead{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    
+
+
+}
+.mainBody{
+
+    background-color: gray;
+    padding-top: 150px;
+    padding-left: 160px;
+    padding-right: 25px;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.mainBody p{
+    color: white;
+}
+
+#smokeButton{
+    position: relative;
+    margin-left: 25%;
+     margin-bottom: 5px;
+    margin-right: 25px;
+    color: black;
+    background-color: white;
+}
+#smokingLower{
+    position: relative;
+    right: 0;
+    bottom: 0;
+}
+
+.callToAction{
+    color: black;
+    font-weight: bold;
+    font-family: times, "Times New Roman", serif; 
+}
+.getInput{
+   
+   border: 1px solid black;
+   padding: 5px;
+}
+.getInput br{
+    display: block;
+    margin: 10px 0;
+}
+#toSmoking{
+
+    padding-left: 225px;
+    padding-top: 100px;
+}
+.nextButton{
+    color: white;
+}
+.goingUp{
+    float: left;
+    margin-right: 100px;
+}
+.goingDown{
+    float:left;
+    
+}
+
+.getInput input{
+    background-color: black;
+    color: white;
+}
+#bagButton{
+    position: relative;
+    margin-left: 25%;
+    margin-bottom: 5px;
+    color: black;
+    background-color: white;
+}
+
+
+#latteTop{
+    width: 100%;
+    overflow: hidden;
+}
+#latteText{
+    float: left;
+    width: 75%;
+}
+#latteImg{
+    width: 25%;
+    height: 100%;
+    float: right;
+    
+}
+#receipt{
+    padding-top: 20px;
+    margin: 0px;
+   height: 200px;
+    
+}
+
+
+#latteReturn{
+    height: 100px;
+}

@@ -1,0 +1,254 @@
+ <!DOCTYPE html>
+ <html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The Cheapest</title>
+    <link rel="stylesheet" type="text/css" href="cheapest.css">
+    <!-- linking bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">    
+    <script type="text/javascript" src="cheapest.js"></script>
+</head>
+<body>
+
+<div id="header">
+    
+    <h1 class="text-center">
+        Cheapest
+    </h1>
+    <div id="savingTotal">
+         <p>
+        <span id="divUser"></span>
+                   
+        Savings totals,<br>
+        <span id="daily" class="money"> </span>
+         per day, &nbsp
+        <span id="monthly" class="money"> </span>
+         per month, &nbsp
+         <span id="yearly" class="money"> </span>
+         per year, &nbsp
+         <span id="decade" class="money"> </span>
+          per decade, &nbsp<br>
+          <span id="career" class="money"> </span>
+          per 30 year career, 
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div  class="row-fluid">
+        <div id="category" >
+           
+            <p> <a class="btn btn-default" href="#about">About Cheapest</a> </p>
+           <span id="categoryHead"> categories<hr></span> 
+            <p> <a class="btn btn-default" href="#quitSmoking">Quit Smoking</a> </p>
+            <p> <a class="btn btn-default" href="#packingLunch">Packing a Lunch</a> </p>
+            <p> <a class="btn btn-default" href="#latte"> Daily Latte </a> </p>
+    <!-- End of lefthand content -->
+        </div>
+        <!--                          About                          -->
+        <div id="about" class="span10 mainBody">
+            <h1> About the Cheapest </h1>
+            <p>
+                Hi my name is Chad and I am Cheap. I don't know how I got this way, but here I am. This website is to show off some money saving tips, and how much money you can save in a month, year, decade, career, etc.
+                I am not a financial professional, just a guy that likes to save money. If you need real financial help, you should look elsewhere. 
+                 </p>
+            <p>
+                I am not perfect and I do not follow every section every day, but this is about quantifying the every daily habits over a long period of time. Some of the items here are advice I got from other people, that I am passing along. 
+            </p>
+            <p>
+                If you would like to keep track of money you are saving, input your info. You can go in order by clicking the next category button at the bottom of each section, or choose a category from the list on the left. 
+            </p>
+            
+                <div id="getName">
+                    <label>Enter your Name:</label>
+                    <input type="text" id="userName">
+                 <button id="getName">Submit</button>
+                </div>
+
+                <div id="aboutLower" class="nextButton">
+                    <div id="toSmoking" class="goingDown">
+                 <p class="nextButton"> Click to move along to<br><a class="btn btn-default" href="#quitSmoking">Quit Smoking</a>  </p>
+                    </div>
+             </div>
+
+               
+
+        <!-- end of about -->
+        </div>
+        <!----------------------------------------------------Quit Smoking -------------------------------------------->
+        <div id="quitSmoking" class="span10 mainBody">
+            <h1>Quitting Smoking</h1>
+            <p>
+            Quitting smoking is one of the healthies things you can do. You have probably heard that hundreds of times, but how much is it costing you per year?</p>
+            <p> If you never smoke and want to move along, select another categoy on the left or the button below.</p>
+            <p> If you nver smoked and want to find out how much money you saved by NOT smoking continue filling out the form. 
+
+                <p>A pack of cigaretts around where I live in Seattle is about <span id="pack"> $9.00</span>.<br>
+                    Roughly %66 of that costs is for taxes, so you might live in an area where smoking is cheaper. <br>
+                    <!-- Get user input area -->
+                    <div class="getInput">
+                        <span class="callToAction"> 
+                            How much do you spend on a single pack of cigarettes? 
+                        </span>
+                            <input type="number" id="singlePack" class="smokeInput" min="0" value="9"></p>
+                        <span class="callToAction"> 
+                            How many packs of cigarets do you smoke in a day?
+                        </span>
+                            <input type="number"  id="packDay" class="smokeInput" value="1"></p>
+                           
+                            <button id="smokeButton">Crunch The Numbers</button>
+                            
+                    </div>
+                        <div id="smokeReturn" class="return">
+                            <p>By quitting smoking you could save:<br>
+
+                        <span id="smokeDaily" class="money">$0.00 </span>
+                         per day, <br>
+                        <span id="smokeMonthly" class="money"> $0.00</span>
+                         per month, <br>
+                         <span id="smokeYearly" class="money">$0.00 </span>
+                         per year, <br>
+                         <span id="smokeDecade" class="money">$0.00 </span>
+                          per decade<br>
+                          <span id="smokeCareer" class="money">$0.00 </span>
+                          in 30 year career, not including interest! 
+
+                        
+                    </div>
+
+
+                        <!-- Bottom buttons -->
+                        <div id="smokingLower" class="nextButton">
+                            <div id="toAbout" class="goingUp">Click to  go back to<br>
+                                <a class="btn btn-default" href="#about">About</a> </div>
+                            <div id="toBrownBagging" class="goingDown">
+                        Click to continie to <br><a class="btn btn-default" href="#packingLunch">Brown Bagging</a>  
+                    </div>
+                    </div>
+        <!-- end of quit smoking -->
+        </div>
+        <!----------------------------------------------------Brown Bagging ---------------------------------------->
+        <div id="packingLunch" class="span10 mainBody">
+            <h1>Brown Bagging </h1>
+            <p>
+            Brown bagging a lunch is something I saw my father do for his entire 30 year career. I see coworkers going out to eat every day while complaining about money issues. Let's take a finacial journey into how much my father saved over 30 years and how much my coworkers are spending (or will spend) in 30 years. The goal is to think small habits today, over the course of a career. </p><p>
+            Even going to teryaki with a drink will cost about $10.00 per day. You could spend more, or less if you eat off the dollar menu (But how healthy is that?) </p>
+            <p>Packing a lunch isn't free , but a sandwhich with lunch meat and yellow mustard will costs an average of $0.75. An average loaf of bread costs $2.40 and can make 10 sandwhiches or $0.24 per day. Lunchmeat can cost $2.50 and can make 5 sandwhiches or $0.50 per day.  If you add a side such as a yogurt for $1.00. $1.75 per day for brown bagging per day. If you have expensive taste, it may cost more.  When you go out to lunch, you will be paying taxes (almost 10% wher I live) and tip (15%) for a 25% increase in eating out over brown bagging. The totals are based on a 5 day work week.</p><p> Go and grab your receipt from your last lunch from work, or look it up on your credit card bill. 
+
+            <!-- Get user input area -->
+            <div class="getInput">
+                <span class="callToAction">
+                    What is your average bill?
+                </span>
+                <input type="number"  id="lunchCost" class="brownBagInput" value="15.50"></p>
+                <span class="callToAction"> 
+                    How often do you eat out? 
+                </span>
+                <input type="number" id="eatOutDays" min="0" max="7" class="brownBagInput" value="5"></p>
+                <span class="callToAction"> 
+                    How much would you spend packing a brown bag lunch?
+                </span>
+                <input type="number"  id="costToBrownBag" class="brownBagInput" value="2.00"></p>
+                   
+                    <button id="bagButton">Crunch The Numbers</button>
+            </div>
+            <div id="brownBagReturn" class="return">
+                <p>By packing a lunch you could save:<br>
+
+                <span id="returnLunchDaily" class="money">$0.00 </span>
+                 per day, <br>
+                <span id="lunchMonthly" class="money"> $0.00</span>
+                 per month, <br>
+                <span id="lunchYearly" class="money">$0.00 </span>
+                 per year, <br>
+                <span id="lunchDecade" class="money">$0.00 </span>
+                 per decade<br>
+                <span id="lunchCareer" class="money">$0.00 </span>
+                 in 30 year career, not including interest! 
+             </div>
+           
+
+
+            <div id="BrownBagLower" class="nextButton">
+                        <div id="toQuitSmoking" class="goingUp">Click to go back to<br><a class="btn btn-default" href="#quitSmoking">Quit Smoking</a> </div>
+                        <div id="toDailyLatte" class="goingDown">
+                        Click to move along to <br><a class="btn btn-default" href="#latte">Daily Latte</a>  
+                    </div>
+                    </div>
+        <!-- end of quit Brown Bagging -->
+        </div>
+
+        <!---------------------------------------------------- Daily Latte ---------------------------------------->
+        <div id="latte" class="span10 mainBody">
+        <div id="latteTop">
+            <div id="latteText">
+                <h1>Daily Latte </h1>
+            <p>
+                I am from Seattle, I understand how important a daily cup of coffee is. Folks are ditching the black coffee for a fancy latte, mocha Or buying an energy drink. Both option get expensive quickly (and are full of sugar). A lot of people spend the money to get their caffeine fix multiple times per day!  Some people spend the money on the drink of choice while, having access to free coffee provided by their workplace! But some still choose to go out and fork over the money anyway!
+            </p>
+            <p> 
+                I brought a coffee from a national coffee chain. The "coffee" was $5.09! I could not believe it! I could have made a keurig for $0.60! See recipt ---->
+            </p>
+            <p>
+                    I will add the option if you bought something cheaper, a drip coffee at a coffee shop is $2.00, a keurig at home is $0.60, gas station coffee $1.50. Brew Coffee at home is something like $0.50. Or drink to coffee provided at work for $0.00. It is up to you. (don't say give up coffee!) 
+            </p>
+        </div>
+        <div id="latteImg">
+            <a href="pics/latteCost.jpg" target="_blank" alt="Grande Carmel Machiato costs $5.09" >
+            <img id="receipt" src="pics/latteCost.jpg"></a>
+        </div>
+        <!-- End of latte top -->
+        </div>
+            <!-- Get user input area -->
+            <div class="getInput">
+                <span class="callToAction">
+                    How much is your daily drink?
+                </span>
+                <input type="number"  id="latteCostInput" class="latteInput" value="5.09"></p>
+                <span class="callToAction"> 
+                    How many days per week do you order your drink? 
+                </span>
+                <input type="number" id="latteDaysPerWeek" min="0" max="7" class="latteInput" value="5"></p>
+                 <span class="callToAction"> 
+                    How many drinks do you have in a day?
+                </span>
+                <input type="number"  id="lattesPerDay" class="latteInput" value="1"></p>
+                <span class="callToAction"> 
+                    How much would you spend on a cheaper option
+                </span>
+                <input type="number"  id="cheaperCoffee" class="latteInput" value="2.00"></p>
+                   
+                    <button id="latteButton">Crunch The Numbers</button>
+            </div>
+
+             <div id="LatteReturn" class="return">
+                <p>By cutting out a daily latte you could save:<br>
+
+                <span id="latteDaily" class="money">$0.00 </span>
+                 per day, <br>
+                <span id="latteMonthly" class="money"> $0.00</span>
+                 per month, <br>
+                <span id="latteYearly" class="money">$0.00 </span>
+                 per year, <br>
+                <span id="latteDecade" class="money">$0.00 </span>
+                 per decade<br>
+                <span id="latteCareer" class="money">$0.00 </span>
+                 in 30 year career, not including interest! 
+             </div>
+
+            <div id="latteLower" class="nextButton">
+                <div id="toBrownBagt" class="goingUp">Click to  go back to<br>
+                    <a class="btn btn-default" href="#packingLunch">Brown Bag</a>
+                </div>
+                <div id="toTop" class="goingDown">
+                    Click to return to the <br><a class="btn btn-default" href="#about">TOP</a>  
+                </div>
+            </div>
+        <!-- end of quit daily Latte -->
+        </div>
+    <!-- End of the row -->
+    </div>
+</div>
+
+
+</body>
+</html>
